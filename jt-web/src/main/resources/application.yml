@@ -1,5 +1,5 @@
 server:
-  port: 8096
+  port: 8094
 #项目的发布路径是根目录
 spring:     #定义springmvc视图解析器
   mvc:
