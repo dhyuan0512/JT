@@ -27,13 +27,13 @@ logging:
     com.jt.mapper: debug
 
 #dubbo配置文件    
-dubbo:
-  scan:
-    basePackages: com.jt   #定义包扫描
-  application:
-    name: provider-user    #定义服务名称 必须添加
-  registry:
-    address: zookeeper://101.200.204.106:2181?backup=101.200.204.106:2182,101.200.204.106:2183
-  protocol:    #协议
-    name: dubbo #使用dubbo默认协议
-    port: 20880  #端口号唯一
+#dubbo:
+#  scan:
+#    basePackages: com.jt   #定义包扫描
+#  application:
+#    name: provider-user    #定义服务名称 必须添加
+#  registry:
+#    address: zookeeper://101.200.204.106:2181?backup=101.200.204.106:2182,101.200.204.106:2183
+#  protocol:    #协议
+#    name: dubbo #使用dubbo默认协议
+#    port: 20880  #端口号唯一
