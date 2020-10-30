@@ -10,7 +10,7 @@ spring:
     url: jdbc:mysql://101.200.204.106:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     
     username: root
-    password: root
+    password: qwer
   mvc:
     view:
       prefix: /WEB-INF/views/
