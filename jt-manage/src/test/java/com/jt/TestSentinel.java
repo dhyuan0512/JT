@@ -6,6 +6,7 @@ import java.util.Set;
 import org.junit.Test;
 
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisCluster;
 import redis.clients.jedis.JedisSentinelPool;
 
 public class TestSentinel {
@@ -23,12 +24,12 @@ public class TestSentinel {
 	public void test01() {
 		
 		Set<String> sentinels =new HashSet<>();
-		sentinels.add("192.168.111.128:26379");
+		sentinels.add("101.200.204.106:26001");
 		JedisSentinelPool pool= new JedisSentinelPool("mymaster", sentinels);
 		Jedis jedis =pool.getResource();
 		jedis.set("1907", "redis哨兵测试成功!!!");
-		jedis.set("1908", "java真他妈难学");
+		//jedis.set("1908", "java真他妈难学");
 		System.out.println(jedis.get("1907"));
-		System.out.println(jedis.get("1908"));
+		//System.out.println(jedis.get("1908"));
 	}
 }

@@ -2,7 +2,9 @@ server:
   port: 8092    
 #项目的发布路径是根目录
 spring:     #定义springmvc视图解析器
-  mvc:    view:      prefix: /WEB-INF/views/
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
       suffix: .jsp
 dubbo:
   scan:
@@ -10,6 +12,6 @@ dubbo:
   application:
     name: consumer-web
   registry:
-    address: zookeeper://192.168.111.128:2181?backup=192.168.111.128:2182,192.168.111.128:2183
+    address: zookeeper://101.200.204.106:2181?backup=101.200.204.106:2182,101.200.204.106:2183
 
   
