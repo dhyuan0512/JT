@@ -84,8 +84,7 @@ public class ItemCatServiceImpl implements ItemCatService {
 		if(StringUtils.isEmpty(json)) {
 			//用户第一次查询
 			treeList =  findItemCatByParentId(parentId);
-			String itemCatJSON = 
-					ObjectMapperUtil.toJSON(treeList);
+			String itemCatJSON = ObjectMapperUtil.toJSON(treeList);
 			jedis.set(key, itemCatJSON);
 			System.out.println("用户第一次查询数据");
 		}else {
