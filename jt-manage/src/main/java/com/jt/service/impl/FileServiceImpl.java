@@ -71,7 +71,7 @@ public class FileServiceImpl implements FileService {
 			int index = fileName.lastIndexOf(".");
 			// .jpg
 			String fileType = fileName.substring(index);
-			String uuid = UUID.randomUUID().toString();
+			String uuid = UUID.randomUUID().toString().replaceAll("-","").toUpperCase();
 			// 拼接文件名称
 			String realFileName = uuid + fileType;
 
