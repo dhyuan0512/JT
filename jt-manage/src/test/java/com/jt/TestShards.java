@@ -14,7 +14,7 @@ public class TestShards {
  */
 	@Test
 	public void test01() {
-		String host ="101.200.204.106";
+		String host ="47.116.140.127";
 		List<JedisShardInfo> shards =new ArrayList<JedisShardInfo>();
 		shards.add(new JedisShardInfo(host,6379));
 		shards.add(new JedisShardInfo(host,6380));

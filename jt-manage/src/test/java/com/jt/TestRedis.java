@@ -12,10 +12,10 @@ public class TestRedis {
      */
     @Test
     public void testString() throws InterruptedException {
-        String host = "101.200.204.106";
+        String host = "47.116.140.127";
         int port = 6379;
         Jedis jedis = new Jedis(host, port);
-        jedis.auth("abcdefg");
+//        jedis.auth("abcdefg");
         jedis.set("1907", "redis的入门案例!!!");
         System.out.println(jedis.get("1907"));
 
@@ -45,7 +45,7 @@ public class TestRedis {
     //说明:添加before注解的作用,当@test注解执行时,先执行@before
     @Before
     public void init() {
-        String host = "101.200.204.106";
+        String host = "47.116.140.127";
         int port = 6379;
         jedis = new Jedis(host, port);
     }
@@ -55,7 +55,7 @@ public class TestRedis {
      */
     @Test
     public void testString2() {
-		jedis.auth("abcdefg");
+//		jedis.auth("abcdefg");
 		if (jedis.exists("abc")) {
             jedis.set("abc", "aaaa");
             System.out.println("入库成功!!");
@@ -72,7 +72,7 @@ public class TestRedis {
      */
     @Test
     public void testString3() {
-		jedis.auth("abcdefg");
+//		jedis.auth("abcdefg");
         jedis.setex("time", 10, "asdf");
         //jedis.psetex(key, milliseconds, value)
         //NX:不允许修改 xx可以修改 ex秒 px毫秒
@@ -84,7 +84,7 @@ public class TestRedis {
      */
     @Test
     public void testList() {
-		jedis.auth("abcdefg");
+//		jedis.auth("abcdefg");
         jedis.lpush("list", "1", "2", "3", "4", "5");
         System.out.println(jedis.rpop("list"));
     }

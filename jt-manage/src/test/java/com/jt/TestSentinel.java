@@ -24,7 +24,7 @@ public class TestSentinel {
 	public void test01() {
 		
 		Set<String> sentinels =new HashSet<>();
-		sentinels.add("101.200.204.106:26001");
+		sentinels.add("47.116.140.127:26001");
 		JedisSentinelPool pool= new JedisSentinelPool("mymaster", sentinels);
 		Jedis jedis =pool.getResource();
 		jedis.set("1907", "redis哨兵测试成功!!!");

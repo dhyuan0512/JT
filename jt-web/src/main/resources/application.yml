@@ -12,4 +12,4 @@
 ##  application:
 ##    name: consumer-web
 ##  registry:
-##    address: zookeeper://101.200.204.106:2181?backup=101.200.204.106:2182,101.200.204.106:2183
+##    address: zookeeper://47.116.140.127:2181?backup=47.116.140.127:2182,47.116.140.127:2183

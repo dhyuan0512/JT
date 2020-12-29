@@ -7,7 +7,7 @@
 #    #引入druid数据源
 #    type: com.alibaba.druid.pool.DruidDataSource
 #    driver-class-name: com.mysql.jdbc.Driver
-#    url: jdbc:mysql://101.200.204.106:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+#    url: jdbc:mysql://47.116.140.127:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
 #    username: root
 #    password: qwer
 #
@@ -33,7 +33,7 @@
 ##  application:
 ##    name: provider-cart    #定义服务名称 必须添加
 ##  registry:
-##    address: zookeeper://101.200.204.106:2181?backup=101.200.204.106:2182,101.200.204.106:2183
+##    address: zookeeper://47.116.140.127:2181?backup=47.116.140.127:2182,47.116.140.127:2183
 ##  protocol:    #协议
 ##    name: dubbo #使用dubbo默认协议
 ##    port: 20881  #端口号唯一
