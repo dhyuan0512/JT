@@ -22,8 +22,6 @@ public class TestCluster {
 		node.add(new HostAndPort("47.116.140.127",7003));
 		node.add(new HostAndPort("47.116.140.127",7004));
 		node.add(new HostAndPort("47.116.140.127",7005));
-		node.add(new HostAndPort("47.116.140.127",7006));
-		node.add(new HostAndPort("47.116.140.127",7007));
 		JedisCluster cluster = new JedisCluster(node);
 		cluster.set("1907", "redis集群测试成功!!!!");
 		System.out.println(cluster.get("1907"));
