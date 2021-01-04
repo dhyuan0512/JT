@@ -15,7 +15,7 @@ public class TestRedis {
         String host = "47.116.140.127";
         int port = 6379;
         Jedis jedis = new Jedis(host, port);
-//        jedis.auth("abcdefg");
+        jedis.auth("abcdefg");
         jedis.set("1907", "redis的入门案例!!!");
         System.out.println(jedis.get("1907"));
 
